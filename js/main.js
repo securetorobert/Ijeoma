@@ -1,8 +1,11 @@
-// import Highway from '@dogstudio/highway'
-// import Fade from './transition'
+import $ from "jquery";
+import Fade from "./transition";
 
-// const H = new Highway.Core({
-//   transitions: {
-//       default: Fade
-//   }
-// })
+$( document ).ready(function() {
+    
+    $(".nav-menu").click(function(){
+      
+        $(".mobile").slideToggle( "slow" );
+      
+    })
+});

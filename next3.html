@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.scss">
+    <link rel="stylesheet" href="./css/media.scss">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Booking Next Page</title>
 </head>
@@ -15,7 +16,8 @@
     <div class="colored short">
         <nav>
             <li><a class="nav-logo" href="#">Ijeoma</a></li>
-            <ul class="navbar">
+            <li><button class="nav-menu" href="#"><img src="./svg/menu.svg" alt=""></button></li>
+            <ul class="navbar mobile">
                 <li><a class="nav-links" href="index.html">Home</a></li>
                 <li><a class="nav-links" href="#">Discover</a></li>
                 <li><a class="nav-links" href="#">Contact</a></li>
@@ -51,7 +53,7 @@
         <div class="card-header">
                 <p>Passenger Details</p>
             </div>
-        <div class="card-box">
+        <div class="card-box card-extra">
             <p>Deji Ibrahim</p>
             <div class="alert">
                     <p>Your ticket will be sent to: dejibrahim@gmail.com</p>
@@ -62,7 +64,7 @@
         <div class="card-header">
                 <p><img src="./svg/flat.svg" alt="">Payment Details <span class="pull-up"><img src="./svg/visa.png" alt=""></span></p>
             </div>
-             <div class="card-box">
+             <div class="card-box card-kill">
                 <form action="">
                    <div class="cardform-input">
                        <label for="">Firstname</label>
@@ -156,7 +158,7 @@
     </section>
 
 
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

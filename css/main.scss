@@ -1,5 +1,5 @@
 @import './tailwind.min.css';
-@import './media.scss';
+// @import './media.scss';
 @import url(http://fonts.googleapis.com/cssfamily=Open+Sans:300italic,700italic,400,300,700);
 
 $base-color: #063693;
@@ -181,13 +181,18 @@ li {
 
 
 }
-
+.nav-menu{
+    display: none;
+}
 
 
 .home-content {
     display: flex;
     justify-content: space-evenly;
 
+    .text-hidden{
+        display: none;
+    }
     h1 {
         margin: 50px 0px 0px 50px;
         font-style: normal;
@@ -756,6 +761,8 @@ li {
         margin: 20px 40px;
         position: relative;
         cursor: pointer;
+        width: auto;
+        transition: all 0.8s ease-in-out;
 
 
 
@@ -784,7 +791,7 @@ li {
             left: -40px;
             width: 200%;
             height: 1px;
-            background: #999;
+            // background: #999;
             margin: 0px !important;
         }
 
@@ -794,11 +801,26 @@ li {
         }
 
         hr.tab-active {
+            width: 150%;
             top: 70px;
             left: -40px;
             height: 3px;
             background: $base-color;
         }
+
+    }
+
+    .tabs:hover{
+        padding: 20px;
+        margin-top: -20px; 
+        // background: #00DD80;
+        hr {
+            width: 150%;
+            height: 3px;
+            background: $base-color;
+            
+        }
+       
 
     }
 
